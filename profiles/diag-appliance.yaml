@@ -1,0 +1,18 @@
+distro:
+  name: AegisDiagOS
+  codename: ironclad
+  version: 0.1.0
+  arch: x86_64
+  base: alpine:3.20
+
+packages:
+  - bash
+  - curl
+  - jq
+  - procps
+  - iproute2
+  - ca-certificates
+
+sysctl:
+  net.ipv4.ip_forward: 0
+  kernel.randomize_va_space: 2
